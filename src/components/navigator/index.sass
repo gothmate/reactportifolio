@@ -1,0 +1,119 @@
+@use 'variables'
+
+
+aside
+  position: fixed
+  width: 60px
+  height: 100vh
+  left: 0
+  background-color: variables.$menu
+
+.navigation
+  position: relative
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 100%
+  height: 100vh
+  & ul
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    height: fit-content
+    & li
+      // border: solid 1px #900 
+      position: relative
+      list-style: none
+      width: 40%
+      height: 70px
+      padding: 3.5rem 0
+      transition: 500ms ease-in-out
+      z-index: 1
+
+      & .icon
+        width: fit-content
+        transition: 300ms
+        &:hover
+          filter: brightness(0.7)
+
+      & .text
+        transform: rotate(90deg)
+        opacity: 0
+        margin-right: 5px
+        font-family: 'Nunito', sans-serif
+        font-weight: 400
+        transition: 1000ms
+    
+    & .active
+      position: absolute
+      translate: 300ms
+
+  & .anchor
+    position: relative
+    display: flex
+    flex-direction: row
+    justify-content: flex-end
+    align-items: center
+    text-align: center
+    font-size: 0.7rem
+    text-decoration: none
+    color: #fff
+
+// seletor do botão
+.indicator
+  position: absolute
+  width: 70px
+  height: 70px 
+  left: 28px
+  top: 80px
+  background: variables.$bg-color-base
+  border-radius: 50%
+  border: 6px solid variables.$menu
+  transition: 0.5s
+
+.navigation
+  & ul
+    & li:nth-child(1)
+      &.active
+        width: 95%
+        & .text
+          opacity: 1
+      &.active ~ .indicator
+        transform: translateY(calc(80px + 0rem))
+.navigation
+  & ul
+    & li:nth-child(2)
+      &.active
+        width: 95%
+        & .text
+          opacity: 1
+      &.active ~ .indicator
+        transform: translateY(calc(80px + 7rem))
+.navigation
+  & ul
+    & li:nth-child(3)
+      &.active
+        width: 95%
+        & .text
+          opacity: 1
+      &.active ~ .indicator
+        transform: translateY(calc(80px + 14rem))
+.navigation
+  & ul
+    & li:nth-child(4)
+      &.active
+        width: 95%
+        & .text
+          opacity: 1
+      &.active ~ .indicator
+        transform: translateY(calc(80px + 21rem))
+.navigation
+  & ul
+    & li:nth-child(5)
+      &.active
+        width: 95%
+        & .text
+          opacity: 1
+      &.active ~ .indicator
+        transform: translateY(calc(80px + 28rem))
