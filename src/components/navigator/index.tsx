@@ -23,11 +23,11 @@ export function Navigator(props: any) {
             <nav className="navigation">
                 <div className="menu">
                     <ul>
-                        <NavItems id="home" className={isActive} link="/" item="HOME" image={Home} />
-                        <NavItems id="works" className={isActive} link="/works" item="WORKS" image={Works}/>
-                        <NavItems id="games" className={isActive} link="/games" item="GAMES" image={Games}/>
-                        <NavItems id="github" className={isActive} link="/github" item="GITHUB" image={Github}/>
-                        <NavItems id="contact" className={isActive} link="/contatos" item="CONTACT" image={GetInTouch} />
+                        <NavItems link="#home" item="HOME" image={Home} />
+                        <NavItems link="#works" item="WORKS" image={Works}/>
+                        <NavItems link="#games" item="GAMES" image={Games}/>
+                        <NavItems link="#github" item="GITHUB" image={Github}/>
+                        <NavItems link="#contatos" item="CONTACT" image={GetInTouch} />
                         <div className="indicator"></div>
                     </ul>
                 </div>

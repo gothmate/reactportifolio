@@ -2,7 +2,7 @@
 
 export default function Games() {
     return (
-        <div className="pageContainer">
+        <div className="pageContainer" id="games">
             <div className="bloco">
                 <div>
                     <h1>Games</h1>

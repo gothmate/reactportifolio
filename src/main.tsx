@@ -1,12 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import {Navigator} from './components/navigator/index'
-import App from './App'
+import MainPage from './pages/MainPage'
 import './main.sass'
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
     <Navigator />
-    <App />
+    <MainPage />
   </React.StrictMode>
 )

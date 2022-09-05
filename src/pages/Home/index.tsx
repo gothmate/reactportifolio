@@ -4,7 +4,7 @@ export default function Home() {
     const [num, setNum] = useState<number>(0);
 
     return (
-        <div className="pageContainer">
+        <div className="pageContainer" id="home">
             <div className="bloco">
                 <div>
                     <h1>Hi! I'm Gabe</h1>
