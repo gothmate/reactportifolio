@@ -33,8 +33,12 @@ aside
 
       & .icon
         width: fit-content
+        cursor: pointer
+        padding: 0.2rem
+        border-radius: 50%
         transition: 300ms
         &:hover
+          background: #606060
           filter: brightness(0.7)
 
       & .text
@@ -46,7 +50,7 @@ aside
         transition: 1000ms
     
     & .active
-      position: absolute
+      // position: absolute
       translate: 300ms
 
   & .anchor

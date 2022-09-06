@@ -6,12 +6,12 @@ import Contatos from './pages/Contato/index';
 
 export default function App() {
   return (
-    <>
+    <div className='main-page'>
       <Home />
       <Works />
       <Games />
       <Github />
       <Contatos />
-    </>
+    </div>
   )
 }
