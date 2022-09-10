@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+// import { contains } from 'sequelize/dist/lib/operators';
 
 type Props = {
     link: string,
@@ -11,13 +12,16 @@ export function NavItems({link, item, image}:Props) {
 
     const [activate, setActivate] = useState('list')
 
-    function activeLink() {
-
-        if(item) {
+    useEffect(()=> {
+        if(item == 'HOME') {
             setActivate('list active')
-        }
-        if(!item) {
-            setActivate('list')
+        } 
+    },[])
+
+    function activeLink() {
+        
+        if(activate == 'list') {
+            setActivate('list active')
         }
     }
 

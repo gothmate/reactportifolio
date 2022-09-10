@@ -67,7 +67,7 @@
   scroll-behavior: smooth
   color: #fff
   scroll-behavior: smooth
-//   border: solid 1px #900
+  // border: solid 1px #900 
 
 body
   display: flex
@@ -80,8 +80,8 @@ body
 
 .pageContainer
   display: flex
-  // justify-content: flex-start
-  // align-items: flex-start
+  justify-content: flex-start
+  align-items: flex-start
   width: 80vw
   height: 100vh
   padding-left: 2rem
@@ -125,13 +125,13 @@ button
     display: flex
     flex-wrap: wrap-reverse
     justify-content: flex-end
-    border: solid 1px purple
+    // border: solid 1px purple
     width: 90%
     & .texto
       // border: solid 1px #900
       width: 60%
       height: 200px
-      min-width: 15rem
+      min-width: 16rem
       max-width: 50%
       margin-inline: 1rem
       color: #fff
@@ -171,3 +171,35 @@ button
       margin-inline: 1rem
       &:hover
         filter: brightness(0.7)
+
+#github
+  margin: 3rem
+  padding-inline: 2rem
+  .repositories
+    margin: 1rem
+  ul
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: center
+    width: 90%
+    height: 70%
+
+    li
+      list-style: none
+      padding-top: 1rem
+      margin: .3rem
+      a
+        text-decoration: none
+        background: #474747
+        padding: .5rem 1rem
+        border-radius: 5px
+        transition: 300ms
+        &:hover
+          background: #2e2e2e
+      img
+        width: 2rem
+        border-radius: 50%
+  .big   
+    @mixin big
+    
