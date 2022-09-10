@@ -7,7 +7,7 @@ import HomeBig from '../../assets/HomeBig.svg'
 
 export default function Home() {
     return (
-        <div className="pageContainer" id="home">
+        <section className="pageContainer" id="home">
             <img className="home big" src={HomeBig} alt="" />
             <div className="bloco">
                 <div className="texto">
@@ -35,6 +35,6 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }

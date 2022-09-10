@@ -8,15 +8,6 @@ import './index.sass'
 import { NavItems } from '../NavItems/index.jsx'
 
 export function Navigator(props: any) {
-
-    const [active, setActive] = useState("inactive")
-
-    function isActive() {
-        addEventListener('click', () => {
-            let result = setActive('active')
-            return result
-        })
-    }
     
     return (
         <aside>
