@@ -7,7 +7,13 @@ import GetInTouch from '../../assets/GetInTouch.svg'
 import './index.sass'
 import { NavItems } from '../NavItems/index.jsx'
 
-export function Navigator(props: any) {
+interface NavigatorProps {
+    link: string;
+    item: string;
+    image: SVGImageElement;
+}
+
+export function Navigator(props: NavigatorProps) {
     
     return (
         <aside>

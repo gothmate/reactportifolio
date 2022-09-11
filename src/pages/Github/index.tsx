@@ -2,9 +2,15 @@ import { useEffect, useState } from "react";
 import GithubBig from '../../assets/GithubBig.svg'
 
 
+interface Repositories {
+    id: number;
+    name: string;
+    html_url: string;
+} 
+
 export default function Github() {
 
-    const [repositories, setRepositories] = useState([])
+    const [repositories, setRepositories] = useState<Repositories[]>([])
 
     useEffect(()=> {
         fetch('https://api.github.com/users/gothmate/repos')

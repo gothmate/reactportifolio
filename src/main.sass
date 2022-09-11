@@ -52,22 +52,21 @@
   padding: 0 10rem
 
 @mixin sectionConfig
-  width: 98vw
+  width: calc(100% - 70px)
   height: 100vh
   display: flex
   justify-content: center
   align-items: flex-start
-  padding-top: 5rem
+  padding-top: 3rem
 
 *
   padding: 0
   margin: 0
   box-sizing: border-box
   font-family: 'Roboto', sans-serif
-  scroll-behavior: smooth
   color: #fff
   scroll-behavior: smooth
-  // border: solid 1px #900 
+  // border: solid 1px #900
 
 body
   display: flex
@@ -76,14 +75,11 @@ body
 
 .main-page
   height: 100vh
+  width: 100%
+  justify-content: flex-end
   overflow: hidden
 
 .pageContainer
-  display: flex
-  justify-content: flex-start
-  align-items: flex-start
-  width: 80vw
-  height: 100vh
   padding-left: 2rem
 
 button
@@ -112,9 +108,13 @@ button
     background: #4b4b4b
     color: #ccc
 
-#home
+section
   @include sectionConfig
   position: relative
+  left: 63px
+
+
+#home
   & .big
     @include big
     right: 10rem
@@ -177,6 +177,9 @@ button
   padding-inline: 2rem
   .repositories
     margin: 1rem
+  & .big
+    @include big
+    right: 10rem
   ul
     display: flex
     flex-wrap: wrap
@@ -197,9 +200,3 @@ button
         transition: 300ms
         &:hover
           background: #2e2e2e
-      img
-        width: 2rem
-        border-radius: 50%
-  .big   
-    @mixin big
-    
