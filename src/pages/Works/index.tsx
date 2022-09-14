@@ -1,4 +1,4 @@
-import WorksBig from '/works.svg'
+import WorksBig from '/Works.svg'
 import Rain from '/Raindrops.gif'
 
 
