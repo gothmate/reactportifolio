@@ -1,4 +1,4 @@
-import ContactBig from '/assets/GetInTouchBig.svg'
+import ContactBig from '/GetInTouchBig.svg'
 
 export default function Contato() {
   return (

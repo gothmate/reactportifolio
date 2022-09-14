@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import GithubBig from '/assets/GithubBig.svg'
+import GithubBig from '/GithubBig.svg'
 
 
 interface Repositories {

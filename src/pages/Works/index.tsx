@@ -1,5 +1,5 @@
-import WorksBig from '/assets/works.svg'
-import Rain from '/assets/Raindrops.gif'
+import WorksBig from '/works.svg'
+import Rain from '/Raindrops.gif'
 
 
 export default function Works() {

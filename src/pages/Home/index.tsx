@@ -1,9 +1,9 @@
-import LinkedIn from '/assets/LinkedinLogo.svg'
-import GithubLogo from '/assets/Github.svg'
-import FigmaLogo from '/assets/FigmaLogo.svg'
-import CodepenLogo from '/assets/CodepenLogo.svg'
-import ProfilePic from '/assets/wow.jpg'
-import HomeBig from '/assets/HomeBig.svg'
+import LinkedIn from '/LinkedinLogo.svg'
+import GithubLogo from '/Github.svg'
+import FigmaLogo from '/FigmaLogo.svg'
+import CodepenLogo from '/CodepenLogo.svg'
+import ProfilePic from '/wow.jpg'
+import HomeBig from '/HomeBig.svg'
 
 export default function Home() {
     return (

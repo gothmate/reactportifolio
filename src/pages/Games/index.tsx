@@ -1,4 +1,4 @@
-import GamesBig from '/assets/GamesBig.svg'
+import GamesBig from '/GamesBig.svg'
 
 export default function Games() {
     return (
