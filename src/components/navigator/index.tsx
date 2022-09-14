@@ -1,13 +1,12 @@
 import { useState } from 'react'
-import Home from '../../assets/Home.svg'
-import Works from '../../assets/Works.svg'
-import Games from '../../assets/Games.svg'
-import Github from '../../assets/Github.svg'
-import GetInTouch from '../../assets/GetInTouch.svg'
+import Home from '/assets/Home.svg'
+import Works from '/assets/Works.svg'
+import Games from '/assets/Games.svg'
+import Github from '/assets/Github.svg'
+import GetInTouch from '/assets/GetInTouch.svg'
 import './index.sass'
 import { NavItems } from '../NavItems/index.jsx'
 import React from 'react'
-import { isExternal } from 'util/types'
 
 interface NavigatorProps extends React.HTMLAttributes<HTMLDivElement> {
     link?: string;
