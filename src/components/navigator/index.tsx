@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import Home from '../../assets/Home.svg'
 import Works from '../../assets/Works.svg'
 import Games from '../../assets/Games.svg'
@@ -10,9 +10,9 @@ import React from 'react'
 import { isExternal } from 'util/types'
 
 interface NavigatorProps extends React.HTMLAttributes<HTMLDivElement> {
-    link: string;
-    item: string;
-    image: SVGImageElement;
+    link?: string;
+    item?: string;
+    image?: SVGImageElement;
 }
 
 export function Navigator(props: NavigatorProps) {
