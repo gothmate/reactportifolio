@@ -55,7 +55,8 @@
   width: 98vw
   height: 100vh
   display: flex
-  justify-content: center
+  justify-content: flex-start
+  margin-left: 5rem 
   align-items: flex-start
   padding-top: 5rem
 
@@ -125,15 +126,15 @@ button
     display: flex
     flex-wrap: wrap-reverse
     justify-content: flex-end
-    // border: solid 1px purple
     width: 90%
+    margin: 0 3rem
     & .texto
       // border: solid 1px #900
       width: 60%
       height: 200px
       min-width: 16rem
-      max-width: 50%
-      margin-inline: 1rem
+      max-width: 26rem
+      margin-right: 1rem
       color: #fff
       & h1
         font-size: clamp(3rem, 1vw + 1rem, 2rem)
@@ -172,11 +173,46 @@ button
       &:hover
         filter: brightness(0.7)
 
+#works
+  position: relative
+  & .rain
+    position: absolute
+    top: 0
+    left: -20px
+    width: 120vw
+    overflow-y: hidden
+    z-index: -2 
+    opacity: .6
+
+  & .big
+    @include big
+    left: 80%
+    top: 30%
+
+#games
+  position: relative
+  & .bgCover
+    position: absolute
+    width: calc(100vw + 20px)
+    height: 100vh
+    top: 0
+    left: -20px
+    background: #272727
+    z-index: -1
+  & .big
+    @include big
+    top: 60%
+    left: 80%
+    
 #github
   margin: 3rem
   padding-inline: 2rem
   .repositories
     margin: 1rem
+  & .big
+    @include big
+    top: 70%
+    left: 15%
   ul
     display: flex
     flex-wrap: wrap
@@ -184,7 +220,6 @@ button
     align-items: center
     width: 90%
     height: 70%
-
     li
       list-style: none
       padding-top: 1rem
@@ -197,9 +232,11 @@ button
         transition: 300ms
         &:hover
           background: #2e2e2e
-      img
-        width: 2rem
-        border-radius: 50%
-  .big   
-    @mixin big
-    
+
+#contatos
+  margin: 3rem
+  padding-inline: 2rem
+  & .big
+    @include big 
+    top: 50%
+    left: 80%

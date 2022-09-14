@@ -1,36 +1,24 @@
 import { useState, useEffect } from 'react'
 // import { contains } from 'sequelize/dist/lib/operators';
 
-type Props = {
-    link: string,
-    item: string,
-    image: string
-};
 
 
-export function NavItems({link, item, image}:Props) {
+interface NavItemsProps extends React.HTMLAttributes<HTMLLIElement> {
+    link: string;
+    item: string;
+    image: string;
+    isActive: boolean;
+} 
 
-    const [activate, setActivate] = useState('list')
 
-    useEffect(()=> {
-        if(item == 'HOME') {
-            setActivate('list active')
-        } 
-    },[])
-
-    function activeLink() {
-        
-        if(activate == 'list') {
-            setActivate('list active')
-        }
-    }
-
+export function NavItems(props:NavItemsProps) {
+    
     return (
-        <li className={activate} onClick={activeLink}>
-            <a className="anchor" href={link} >
-                <span className="text">{item}</span>
+        <li className={props.isActive? 'list active' : 'list'} onClick={props.onClick}>
+            <a className="anchor" href={props.link} >
+                <span className="text">{props.item}</span>
                 <span className="icon">
-                    <img src={image} alt={item} />
+                    <img src={props.image} alt={props.item} />
                 </span>
             </a>
         </li>

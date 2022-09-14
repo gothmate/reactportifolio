@@ -78,33 +78,37 @@ aside
 
 .navigation
   & ul
+    position: relative
+    & li
+      // border: solid yellowgreen 1px
+      & a
+        // border: solid red 1px
+        & .icon
+          cursor: pointer
+          padding: 0.2rem
+          z-index: 10
+        
     & li:nth-child(1)
       &.active
         width: 95%
         & .text
           opacity: 1
       &.active ~ .indicator
-        transform: translateY(0)
-.navigation
-  & ul
+        transform: translateY(.3rem)
     & li:nth-child(2)
       &.active
         width: 95%
         & .text
           opacity: 1
       &.active ~ .indicator
-        transform: translateY(calc(80px + 2.5rem))
-.navigation
-  & ul
+        transform: translateY(calc(70px + 2.7rem))
     & li:nth-child(3)
       &.active
         width: 95%
         & .text
           opacity: 1
       &.active ~ .indicator
-        transform: translateY(calc(80px + 9.5rem))
-.navigation
-  & ul
+        transform: translateY(calc(80px + 9.3rem))
     & li:nth-child(4)
       &.active
         width: 95%
@@ -112,12 +116,10 @@ aside
           opacity: 1
       &.active ~ .indicator
         transform: translateY(calc(80px + 16rem))
-.navigation
-  & ul
     & li:nth-child(5)
       &.active
         width: 95%
         & .text
           opacity: 1
       &.active ~ .indicator
-        transform: translateY(calc(80px + 23.5rem))
+        transform: translateY(calc(80px + 23rem))

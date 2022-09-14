@@ -1,13 +1,19 @@
+import WorksBig from '../../assets/works.svg'
+import Rain from '../../assets/Raindrops.gif'
+
 
 export default function Works() {
   return (
     <section className="pageContainer" id="works">
+      <img className="works big" src={WorksBig} alt="works" />
+      <img className="rain" src={Rain} alt="background" />
       <div className="bloco">
-        <div>
+        <div className="texto">
           <h1>Works</h1>
+          
         </div>
+        
       </div>
     </section>
-
   )
 }
